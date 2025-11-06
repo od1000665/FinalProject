@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Adventure Game Try 1/1.0.0": {
+        "runtime": {
+          "Adventure Game Try 1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Adventure Game Try 1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
