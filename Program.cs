@@ -6,6 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("[Does not save]");
         bool redo = false;
         Console.WriteLine("------------------------------------");
         Console.WriteLine("         Adventure Game");
@@ -131,11 +132,6 @@ class Program
                     break;
             }
         } while (redo == true);
-        
-        
-
-        
-
     }
 
     static void playerInventory(bool redo, string[] inventory, string pick) // inventory
@@ -172,4 +168,6 @@ class Program
     }
     
 }
+
+
 
