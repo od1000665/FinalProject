@@ -31,7 +31,7 @@ class Program
 
                 case "2":  // Going to Play
                     Console.WriteLine("Welcome to the Adventure Game");
-                    startGame(pick);
+                    startGame(redo, pick);
                     break;
 
                 case "3":  // Going to Exit
@@ -82,7 +82,7 @@ class Program
         } while (redo == true);
 
     }
-    static void startGame(string pick) // start of the game
+    static void startGame(bool redo, string pick) // start of the game
     {
         string a = " ";
         string b = " ";
@@ -90,12 +90,12 @@ class Program
         string d = " ";
         string e = " ";
         string f = " ";
-        string g = " ";
-        string h = " ";
-        string[] inventory = { };
-        d = "X";
+        string[] inventory = { };    // inventory all items
+        a = "X";
         do
         {
+            redo = true;
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("North of you is a giant steep mountain with a giant door,");
             Console.WriteLine("south of you is a ragging river, and west and east of you");
             Console.WriteLine("is all forest.");
@@ -110,7 +110,18 @@ class Program
             {
                 case "1":         // outsideMap
                     Console.WriteLine("");
-                    outsideMap(a, b, c, d, e, f, g, h);
+                    outsideMap(redo, a, b, c, d, e, f);
+                    redo = true;
+
+
+                    break;
+
+                case "2":
+
+
+                    Console.WriteLine("");
+                    playerInventory(redo, inventory, pick);
+                    redo = true;
 
                     break;
 
@@ -119,7 +130,7 @@ class Program
 
                     break;
             }
-        } while (true);
+        } while (redo == true);
         
         
 
@@ -127,32 +138,38 @@ class Program
 
     }
 
-    static void inventory(string[] inventory) // inventory
+    static void playerInventory(bool redo, string[] inventory, string pick) // inventory
     {
         foreach (string item in inventory)
         {
             Console.WriteLine($" - {item}");
         }
+        Console.WriteLine("");
+        if (pick == "1")
+            {
+                return;
+            }
+            else
+            {
+                redo = true;
+                Console.WriteLine("");
+                Console.WriteLine("THAT WAS NOT AN OPTION");
+            }
     }
 
-    static void outsideMap(string a, string b, string c, string d, string e, string f, string g, string h) // outside map
+    static void outsideMap(bool redo, string a, string b, string c, string d, string e, string f) // outside map
     {
-        Console.WriteLine("---------------");
-        Console.WriteLine($"|{a}|{b}|{c}|{d}|{e}|{f}|{g}|");
-        Console.WriteLine("---------------");
-        Console.WriteLine($"| |{h}| | | | | |");
-        Console.WriteLine("---------------");
-        //Console.WriteLine($"|{i}|{j}|{k}|{l}|{m}|{n}|{o}|");
-        
-        
+        do
+        {
+            Console.WriteLine("---------------");
+            Console.WriteLine($"|{a}|{b}|{c}|{d}|{e}|{f}|");
+            Console.WriteLine("---------------");
+
+        } while (true);
+       
+
+
     }
+    
 }
-
-
-
-
-
-
-
-
 
