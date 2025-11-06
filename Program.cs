@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("[Does not save]");
+        Console.WriteLine(" [Does not save]");
         bool redo = false;
         Console.WriteLine("------------------------------------");
         Console.WriteLine("         Adventure Game");
@@ -38,7 +38,7 @@ class Program
                 case "3":  // Going to Exit
                     redo = false;
                     Console.WriteLine("------------------------------------");
-                    Console.WriteLine("Thanks for playing!"); 
+                    Console.WriteLine("Thanks for playing!");
                     break;
 
                 default: // Wrong chioce go back to Title
@@ -49,10 +49,17 @@ class Program
                     break;
             }
         } while (redo == true);
-        
+
 
 
     }
+
+
+
+
+
+
+
     static void direction(bool redo, string pick)  //instrutions
     {
         do
@@ -83,6 +90,12 @@ class Program
         } while (redo == true);
 
     }
+
+
+
+
+
+
     static void startGame(bool redo, string pick) // start of the game
     {
         string a = " ";
@@ -134,6 +147,11 @@ class Program
         } while (redo == true);
     }
 
+
+
+
+
+
     static void playerInventory(bool redo, string[] inventory, string pick) // inventory
     {
         foreach (string item in inventory)
@@ -142,16 +160,20 @@ class Program
         }
         Console.WriteLine("");
         if (pick == "1")
-            {
-                return;
-            }
-            else
-            {
-                redo = true;
-                Console.WriteLine("");
-                Console.WriteLine("THAT WAS NOT AN OPTION");
-            }
+        {
+            return;
+        }
+        else
+        {
+            redo = true;
+            Console.WriteLine("");
+            Console.WriteLine("THAT WAS NOT AN OPTION");
+        }
     }
+    
+
+
+    
 
     static void outsideMap(bool redo, string a, string b, string c, string d, string e, string f) // outside map
     {
