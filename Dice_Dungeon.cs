@@ -7,52 +7,56 @@ namespace Adventure_Game_Try_1;
 class Program
 {
     static void Main(string[] args)
-    {
-        bool redo = false; // Redos
+    {   // Redos
+        bool redo = false; 
         bool redo1 = true;
         string answer = " ";
         Console.WriteLine("------------------------------------");
-        Console.WriteLine("         The Infinite Dungeon");   // Title
-    
+        // Title
+        Console.WriteLine("         Dice Dungeon");  
+
+ 
+        // Naming Yourself
         do
         {
             redo = true;
             redo1 = true;
             Console.WriteLine("------------------------------------");
-            Console.WriteLine(" What is your name?");
+            Console.WriteLine(" Enter your username?");
             Console.Write(">> ");
-            string name = Console.ReadLine() + "";
+            string username = Console.ReadLine() + "";
             do
             {
+                // Asking if it is correct
                 Console.WriteLine("------------------------------------");
-                Console.WriteLine($" Is  {name}  right? (y/n)");
+                Console.WriteLine($" Is  {username}  correct? (y/n)");
                 Console.Write(">> ");
-                answer = Console.ReadLine() + "";
-                if (answer == "y")
+                answer = Console.ReadLine() + ""; 
+                // Exit out of here if "y"
+                if (answer == "y") 
                 {
                     redo = false;
                     redo1 = false;
                 }
+                // Goes back to "Naming Yourself"
                 else if (answer == "n")
                 {
                     redo1 = false;
                 }
+                // Goes back to "Asking if it is correct"
                 else
                 {
                     Console.WriteLine("------------------------------------");
                     Console.WriteLine(" That is not an answer");
                 }
             } while (redo1 == true);
-            
-            
-
- 
         } while (redo == true);
        
+
         do
         {
+            // Start of new game
             redo = false;
-            
             Console.WriteLine("------------------------------------");
             Console.WriteLine(" 1) Play");
             Console.WriteLine(" 2) Instructions");
@@ -60,27 +64,28 @@ class Program
             Console.Write(">> ");
             answer = Console.ReadLine() + "";
             switch (answer)
-            {
-                case "1": // Play
+            {   
+                // Play
+                case "1": 
 
                     Dungeon.dungeonStart();
                     Console.ReadKey();
                     break;
-
-                case "2": // Instrutions
+                // Instrutions
+                case "2": 
                     
                     Console.WriteLine("This is intructions");
                     redo = true;
 
                     break;
-
-                case "3": // Exit
+                // Exit the game
+                case "3": 
 
                     Console.WriteLine(" == Thanks For Playing ==");
 
                     break;
-
-                default: // Will Redo The Entire Code 
+                // Will go back to the begining of the "Start of new game"
+                default: 
                     redo = true;
                     Console.WriteLine(" That Was Not An Option!");
 
@@ -89,19 +94,6 @@ class Program
 
         } while (redo == true);
 
-
-        
-
         Console.WriteLine("This is the end");
-
-
-
-
-
-
-
-
     }
 }
-
-

@@ -2,36 +2,47 @@ public class Dungeon()
 {
     public static void dungeonStart()
     {
-        var health = 20;
-        bool redo = false;
-        Random rand = new Random();
-        int randRoom = 0;
+        // Players health
+        int health = 20;
 
-        Console.WriteLine("This is the start of the dungeon");
+        bool redo = false;
+        // Random  to make random rooms
+        Random random = new Random();
+        int randRoom = 0;
+        // Title of Dungeon start
+        Console.WriteLine("------------------------------------");
+        Console.WriteLine(" You have entered the dungeon");
+
+        //
+        string[] title = {"t", "s", "e"};
+        string[] roomDescription = {""};
+        string[] enemyDescription = {""};
+        int roomCleared = 0;
+        int enemiesKilled = 0;
+        
+
+
         do
         {
-            Console.WriteLine("Do you want to enter? (y/n)");
-            Console.WriteLine("");
-            Console.Write(">> ");
-            string answer = Console.ReadLine() + "";
-            if (answer == "y")
-            {
-            
-            }
-            else if (answer == "n")
-            {
-            
-            }
-            else
-            {
-            
-            }
-        } while (true);
-        
+            title = random.Next(0, 3);
+           
+
+
+
+
+
+
+        } while (health > 0);
 
     }
-    public static void dungeonRoom()
-    {
-        
-    }
+
+
+
+
+
+
+
+
+
+
 }
