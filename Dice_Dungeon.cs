@@ -6,11 +6,15 @@ namespace Adventure_Game_Try_1;
 
 class Program
 {
-    static void Main(string[] args)
+    
+    public static void Main(string[] args)
     {   // Redos
-        bool redo = false; 
+        bool redo = false;
         bool redo1 = true;
+        string username = " ";
         string answer = " ";
+        int enemiesKilled = 0;
+        int roomsCleared = 0;
         Console.WriteLine("------------------------------------");
         // Title
         Console.WriteLine("         Dice Dungeon");  
@@ -24,7 +28,7 @@ class Program
             Console.WriteLine("------------------------------------");
             Console.WriteLine(" Enter your username?");
             Console.Write(">> ");
-            string username = Console.ReadLine() + "";
+            username = Console.ReadLine() + "";
             do
             {
                 // Asking if it is correct
@@ -68,13 +72,17 @@ class Program
                 // Play
                 case "1": 
 
-                    Dungeon.dungeonStart();
+                    Dungeon.dungeonStart(out roomsCleared, out enemiesKilled);
                     Console.ReadKey();
                     break;
                 // Instrutions
                 case "2": 
-                    
-                    Console.WriteLine("This is intructions");
+                    Console.WriteLine("------------------------------------");
+                    Console.WriteLine("Intructions:");
+                    Console.WriteLine("When you enter a room with a enemy you can either fight it (y) or run from it (n).");
+                    Console.WriteLine("If you fight it you will roll a dice and if you get a odd number you kill it");
+                    Console.WriteLine("but if you get and even number you will take 1 damage.");
+                    Console.WriteLine("If you want to run you have a chance of taking 0 - 3 damage.");
                     redo = true;
 
                     break;
@@ -94,6 +102,13 @@ class Program
 
         } while (redo == true);
 
-        Console.WriteLine("This is the end");
+        Console.WriteLine("");
+        Console.WriteLine("You have died");
+        Console.WriteLine($"Result of {username}:");
+        Console.WriteLine($"Floors Cleared: {roomsCleared}");
+        Console.WriteLine($"Enemies Killed: {enemiesKilled}");
     }
+    
+
 }
+
