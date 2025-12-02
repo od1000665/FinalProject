@@ -56,3 +56,18 @@ C:\Users\nicho\OneDrive - Ozarks Technical Community College\ITCP\Adventure Game
 C:\Users\nicho\OneDrive - Ozarks Technical Community College\ITCP\Adventure Game Try 1\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.pdb
 C:\Users\nicho\OneDrive - Ozarks Technical Community College\ITCP\Adventure Game Try 1\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.genruntimeconfig.cache
 C:\Users\nicho\OneDrive - Ozarks Technical Community College\ITCP\Adventure Game Try 1\FinalProject\obj\Debug\net8.0\ref\Adventure Game Try 1.dll
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.AssemblyInfoInputs.cache
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.AssemblyInfo.cs
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.csproj.CoreCompileInputs.cache
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.sourcelink.json
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.dll
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\refint\Adventure Game Try 1.dll
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.pdb
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\bin\Debug\net8.0\Adventure Game Try 1.exe
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\bin\Debug\net8.0\Adventure Game Try 1.deps.json
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\bin\Debug\net8.0\Adventure Game Try 1.runtimeconfig.json
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\bin\Debug\net8.0\Adventure Game Try 1.dll
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\bin\Debug\net8.0\Adventure Game Try 1.pdb
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\Adventure Game Try 1.genruntimeconfig.cache
+C:\Users\dougl\OneDrive - Ozarks Technical Community College\2025-Fall\debugThis\FinalProject\obj\Debug\net8.0\ref\Adventure Game Try 1.dll
