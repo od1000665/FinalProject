@@ -53,6 +53,7 @@ public class Dungeon()
                 {
                     Console.Write("Press Enter To Continue ");
                     placeholder = Console.ReadLine() + ""; // placeHolder
+                    Console.WriteLine("------------------------------------");
                 }
                 // Enemy encounter
                 else
@@ -104,14 +105,18 @@ public class Dungeon()
                                 }
                                 
                             }
+                            diceRoll = random.Next(1, 3);
                             if (health == 20)
                             {
                                 Console.WriteLine("It dropped nothing");
+                                Console.Write("Press Enter To Continue");
+                                placeholder = Console.ReadLine() + ""; // placeHolder  
+                                Console.WriteLine("------------------------------------");
                             }
                             else
                             {
-                                diceRoll = random.Next(1, 2);
-                                if (diceRoll == 2)
+                                
+                                if (diceRoll == 3)
                                 {
                                     Console.WriteLine(" It dropped a health potion");
                                     diceRoll = random.Next(1, 2);
@@ -123,6 +128,7 @@ public class Dungeon()
                                 }
                                 else
                                 {
+                                    Console.WriteLine("It dropped nothing");
                                     Console.Write("Press Enter To Continue");
                                     placeholder = Console.ReadLine() + ""; // placeHolder  
                                     Console.WriteLine("------------------------------------");
