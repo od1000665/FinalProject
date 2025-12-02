@@ -105,7 +105,6 @@ public class Dungeon()
                                 }
                                 
                             }
-                            diceRoll = random.Next(1, 3);
                             if (health == 20)
                             {
                                 Console.WriteLine("It dropped nothing");
@@ -122,7 +121,7 @@ public class Dungeon()
                                     diceRoll = random.Next(1, 2);
                                     Console.WriteLine($" It healed you for {diceRoll} health");
                                     health = health + diceRoll;
-                                    Console.WriteLine("  You have {health} health now");
+                                    Console.WriteLine($"  You have {health} health now");
                                     Console.Write("Press Enter To Continue");
                                     placeholder = Console.ReadLine() + ""; // placeHolder
                                 }
