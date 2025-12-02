@@ -107,8 +107,20 @@ class Program
         Console.WriteLine($"Result of {username}:");
         Console.WriteLine($"Floors Cleared: {roomsCleared}");
         Console.WriteLine($"Enemies Killed: {enemiesKilled}");
+        addRecord(floorsCleared, username, enemiesKilled, "HighScore.csv");
+        Console.WriteLine("Highscore saved!");
     }
-    
+    public static void addRecord(int floorsCleared, string username, int enemiesKilled, string filepath)
+    {
+        try
+        {
+            File.AppendAllText($"./../../../{filepath}", $"{floorsCleared},{username},{enemiesKilled}\n");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ooops: {ex}");
+        }
+    }
 
 }
 
