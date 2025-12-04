@@ -123,6 +123,7 @@ public class Dungeon()
                                     health = health + diceRoll;
                                     Console.WriteLine($"  You have {health} health now");
                                     Console.Write("Press Enter To Continue");
+                                    Console.WriteLine("------------------------------------");
                                     placeholder = Console.ReadLine() + ""; // placeHolder
                                 }
                                 else
