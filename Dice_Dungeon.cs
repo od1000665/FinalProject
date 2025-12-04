@@ -117,8 +117,8 @@ class Program
     public static void addRecord(int floorsCleared, string username, int enemiesKilled, string filepath)
     {
         try
-        {
-            File.AppendAllText($"./../../../{filepath}", $"{floorsCleared},{username},{enemiesKilled}{Environment.NewLine}"); //writes highscore to csv and makes it a new line
+        {//writes highscore to csv and makes it a new line
+            File.AppendAllText($"./../../../{filepath}", $"{floorsCleared},{username},{enemiesKilled}{Environment.NewLine}"); 
         }
         catch (Exception ex) //catch incase the saving fails
         {
