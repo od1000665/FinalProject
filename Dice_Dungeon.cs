@@ -102,6 +102,7 @@ class Program
 
         } while (redo == true);
 
+        //Prints out score to the player
         Console.WriteLine("");
         Console.WriteLine("You have died");
         Console.WriteLine($"Result of {username}:");
@@ -114,9 +115,9 @@ class Program
     {
         try
         {
-            File.AppendAllText($"./../../../{filepath}", $"{floorsCleared},{username},{enemiesKilled}{Environment.NewLine}");
+            File.AppendAllText($"./../../../{filepath}", $"{floorsCleared},{username},{enemiesKilled}{Environment.NewLine}"); //writes highscore to csv and makes it a new line
         }
-        catch (Exception ex)
+        catch (Exception ex) //catch incase the saving fails
         {
             Console.WriteLine($"Ooops: {ex}");
         }
