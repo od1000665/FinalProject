@@ -3,7 +3,10 @@ using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
 namespace Adventure_Game_Try_1;
-
+/*Dice Dungeon
+Created by: Talon, Owen, Simon
+Infinite dungeon with dice combat
+*/
 class Program
 {
     
